@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Profile
+{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2>Welcome, {{ user.name }}</h2>
+    <div class="card">
+        <div class="card-body">
+            <p class="card-text">Username: {{ user.username }}</p>
+            <p class="card-text">Email: {{ user.email }}</p>
+            <p class="card-text">Phone No: {{ user.phone_no }}</p>
+            <p class="card-text">Current Year: {{ user.current_year }}</p>
+            <p class="card-text">Current Semester: {{ user.current_semester }}</p>
+            <p class="card-text">Branch: {{ user.branch }}</p>
+            <p class="card-text">Father's Name: {{ user.father_name }}</p>
+            <p class="card-text">Address: {{ user.address }}</p>
+           
+        </div>
+    </div>
+</div>
+{% endblock %}
